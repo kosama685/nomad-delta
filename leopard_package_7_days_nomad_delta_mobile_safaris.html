@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Leopard Package - Nomad Delta Mobile Safaris</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#817470",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#584239",
+                        "tertiary-fixed": "#d2e9cd",
+                        "surface-dim": "#dbdad7",
+                        "on-tertiary-fixed-variant": "#384c37",
+                        "tertiary-container": "#112312",
+                        "outline-variant": "#d3c3be",
+                        "primary-container": "#2d1b14",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#4f4441",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#000901",
+                        "secondary-fixed": "#ffdcc6",
+                        "surface-variant": "#e3e2e0",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#b7cdb2",
+                        "on-primary-fixed": "#291710",
+                        "primary": "#110402",
+                        "on-surface": "#1a1c1a",
+                        "surface-container-high": "#e9e8e5",
+                        "secondary-fixed-dim": "#ffb786",
+                        "surface-tint": "#725950",
+                        "inverse-primary": "#e0c0b4",
+                        "on-secondary-fixed-variant": "#723600",
+                        "secondary-container": "#ff8928",
+                        "inverse-on-surface": "#f2f1ee",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#faf9f6",
+                        "on-background": "#1a1c1a",
+                        "surface-container-low": "#f4f3f1",
+                        "on-secondary-fixed": "#311300",
+                        "background": "#faf9f6",
+                        "surface": "#faf9f6",
+                        "on-tertiary-container": "#788c75",
+                        "on-secondary-container": "#642f00",
+                        "secondary": "#964900",
+                        "surface-container": "#efeeeb",
+                        "inverse-surface": "#2f312f",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed-dim": "#e0c0b4",
+                        "on-primary-container": "#9d8177",
+                        "surface-container-highest": "#e3e2e0",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#fddbd0",
+                        "on-tertiary-fixed": "#0e1f0f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "sm": "12px",
+                        "base": "8px",
+                        "lg": "48px",
+                        "xl": "80px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "md": "24px",
+                        "xs": "4px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Libre Caslon Text"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "body-md": ["Manrope"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "label-md": ["Manrope"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "body-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-secondary-fixed selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="bg-background/95 dark:bg-background/95 docked full-width top-0 sticky bg-background/95 backdrop-blur-sm flat no shadows z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop h-20 max-w-7xl mx-auto">
+<div class="font-display-lg text-headline-md text-primary dark:text-primary-fixed">
+                Nomad Delta
+            </div>
+<div class="hidden md:flex space-x-lg font-body-md text-label-md uppercase tracking-wider">
+<a class="text-secondary border-b-2 border-secondary pb-1 hover:opacity-80 transition-opacity Active: scale-95 duration-200" href="index.html">Safaris</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200 hover:opacity-80 transition-opacity" href="index.html">Destinations</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200 hover:opacity-80 transition-opacity" href="index.html">About Us</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200 hover:opacity-80 transition-opacity" href="index.html">Contact</a>
+</div>
+<div class="hidden md:block">
+<button class="bg-secondary text-on-secondary font-label-md px-md py-sm rounded tracking-[0.02em] hover:-translate-y-0.5 transition-transform shadow-[0_2px_8px_rgba(45,27,20,0.1)]">Book Now</button>
+</div>
+<!-- Mobile Menu Toggle (Decorative) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative w-full h-[716px] min-h-[600px] flex items-end pb-xl bg-surface-container-highest">
+<img alt="Leopard in a tree in the Okavango Delta" class="absolute inset-0 w-full h-full object-cover z-0" data-alt="A majestic leopard resting gracefully on a thick branch of an ancient acacia tree in the vast, open plains of the Okavango Delta, Botswana. The scene is bathed in the warm, golden hour light of late afternoon, casting soft shadows and highlighting the rich textures of the leopard's spotted coat. The overarching aesthetic is 'Bush Elegance', feeling like a premium wildlife photograph from a well-crafted field journal. The color palette features natural earthy tones, vibrant sunset orange hints, and deep umber blacks, conveying a sense of raw, untamed nature and professional, sturdy hospitality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_zjQ4uFeH6U5Pelw2DwLhp-sxpb5RrEGz_tWM8SbYzupEJf-mZrkdKF3z5Vng94cerd-JCNAEICP-oVCUgMSnTt4kEDGXoVqJMNukoEu5oaxhOz9fDljQT9stIagEhTplhlIr3hzEMrPQXirSzwatRdS1wjg4-Ubj3R3OPcbv5ius8rc017-_ndVxzjxYpiFc3icKKc5f29TwwMU7oAMNsuYbSM_f5ltsBlcQYfCPLMnGap7wD2zisc47xvjtmZTWgKdjBjt3K9w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/40 to-transparent z-10"></div>
+<div class="relative z-20 w-full max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop text-on-primary">
+<div class="max-w-2xl">
+<span class="inline-block bg-tertiary-container text-on-tertiary-container font-label-md px-sm py-xs rounded mb-md uppercase tracking-wider">7 Days / 6 Nights</span>
+<h1 class="font-display-lg text-display-lg md:text-[64px] mb-sm">Leopard Package</h1>
+<p class="font-headline-md text-headline-md text-inverse-primary mb-lg">Okavango Delta &amp; Moremi Game Reserve Expedition</p>
+<div class="flex flex-col sm:flex-row sm:items-center gap-md">
+<div>
+<span class="block font-label-md uppercase tracking-wider text-outline-variant mb-xs">Starting From</span>
+<span class="font-headline-lg text-headline-lg">$2,650 <span class="font-body-md text-body-md text-outline-variant font-normal">per person</span></span>
+</div>
+<button class="bg-secondary text-on-secondary font-label-md px-lg py-md rounded tracking-[0.02em] hover:-translate-y-0.5 transition-transform shadow-[0_4px_12px_rgba(45,27,20,0.2)] whitespace-nowrap mt-sm sm:mt-0">Book This Safari</button>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content Grid -->
+<main class="w-full max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-xl grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Left Column: Content -->
+<div class="lg:col-span-8 space-y-xl">
+<!-- At a Glance Bento -->
+<section>
+<div class="flex items-center gap-sm mb-lg">
+<span class="material-symbols-outlined text-secondary" data-icon="visibility">visibility</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">At a Glance</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-sm">
+<div class="bg-surface-container-lowest p-md rounded-lg shadow-[0_2px_8px_rgba(45,27,20,0.04)] border border-outline/10">
+<span class="material-symbols-outlined text-outline mb-sm" data-icon="schedule">schedule</span>
+<span class="block font-label-md text-outline uppercase tracking-wider mb-xs">Duration</span>
+<span class="font-body-md text-primary font-semibold">7 Days</span>
+</div>
+<div class="bg-surface-container-lowest p-md rounded-lg shadow-[0_2px_8px_rgba(45,27,20,0.04)] border border-outline/10">
+<span class="material-symbols-outlined text-outline mb-sm" data-icon="group">group</span>
+<span class="block font-label-md text-outline uppercase tracking-wider mb-xs">Group Size</span>
+<span class="font-body-md text-primary font-semibold">Max 6 Pax</span>
+</div>
+<div class="bg-surface-container-lowest p-md rounded-lg shadow-[0_2px_8px_rgba(45,27,20,0.04)] border border-outline/10">
+<span class="material-symbols-outlined text-outline mb-sm" data-icon="flight_takeoff">flight_takeoff</span>
+<span class="block font-label-md text-outline uppercase tracking-wider mb-xs">Starts</span>
+<span class="font-body-md text-primary font-semibold">Maun</span>
+</div>
+<div class="bg-surface-container-lowest p-md rounded-lg shadow-[0_2px_8px_rgba(45,27,20,0.04)] border border-outline/10">
+<span class="material-symbols-outlined text-outline mb-sm" data-icon="flight_land">flight_land</span>
+<span class="block font-label-md text-outline uppercase tracking-wider mb-xs">Ends</span>
+<span class="font-body-md text-primary font-semibold">Maun</span>
+</div>
+</div>
+</section>
+<!-- Divider -->
+<div class="flex items-center justify-center py-md opacity-20">
+<div class="w-16 h-px bg-primary"></div>
+<div class="w-2 h-2 rotate-45 bg-primary mx-4"></div>
+<div class="w-16 h-px bg-primary"></div>
+</div>
+<!-- Itinerary Timeline -->
+<section>
+<div class="flex items-center gap-sm mb-lg">
+<span class="material-symbols-outlined text-secondary" data-icon="map">map</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Day-by-Day Itinerary</h2>
+</div>
+<div class="relative border-l border-outline/20 ml-md space-y-lg pl-lg pb-md">
+<!-- Day 1-2 -->
+<div class="relative">
+<div class="absolute -left-[41px] top-0 w-10 h-10 bg-surface-container-lowest border border-outline/20 rounded-full flex items-center justify-center text-secondary shadow-[0_2px_8px_rgba(45,27,20,0.08)]">
+<span class="material-symbols-outlined text-sm" data-icon="directions_car">directions_car</span>
+</div>
+<span class="font-label-md text-secondary uppercase tracking-wider">Days 1 - 2</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-xs mb-sm">Moremi Game Reserve</h3>
+<p class="font-body-md text-on-surface-variant mb-md">Depart Maun and journey into the heart of Moremi. Expect dense mopane woodlands and spectacular floodplains. Afternoon game drives offer excellent chances to spot wild dog and, true to the package name, elusive leopards.</p>
+<div class="flex flex-wrap gap-sm">
+<span class="inline-flex items-center gap-xs bg-surface-container py-xs px-sm rounded font-label-md text-xs text-on-surface-variant"><span class="material-symbols-outlined text-[16px]" data-icon="directions_car">directions_car</span> Game Drive</span>
+<span class="inline-flex items-center gap-xs bg-surface-container py-xs px-sm rounded font-label-md text-xs text-on-surface-variant"><span class="material-symbols-outlined text-[16px]" data-icon="night_shelter">night_shelter</span> Mobile Camp</span>
+</div>
+</div>
+<!-- Day 3-4 -->
+<div class="relative">
+<div class="absolute -left-[41px] top-0 w-10 h-10 bg-surface-container-lowest border border-outline/20 rounded-full flex items-center justify-center text-secondary shadow-[0_2px_8px_rgba(45,27,20,0.08)]">
+<span class="material-symbols-outlined text-sm" data-icon="rowing">rowing</span>
+</div>
+<span class="font-label-md text-secondary uppercase tracking-wider">Days 3 - 4</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-xs mb-sm">Khwai Concession</h3>
+<p class="font-body-md text-on-surface-variant mb-md">Move camp to the Khwai River area. This region is famous for its high concentration of elephants and predators. Experience the Delta intimately from a traditional dugout canoe (mokoro) as you glide through papyrus-lined channels.</p>
+<div class="flex flex-wrap gap-sm">
+<span class="inline-flex items-center gap-xs bg-surface-container py-xs px-sm rounded font-label-md text-xs text-on-surface-variant"><span class="material-symbols-outlined text-[16px]" data-icon="rowing">rowing</span> Mokoro Excursion</span>
+<span class="inline-flex items-center gap-xs bg-surface-container py-xs px-sm rounded font-label-md text-xs text-on-surface-variant"><span class="material-symbols-outlined text-[16px]" data-icon="visibility">visibility</span> Night Drive</span>
+</div>
+</div>
+<!-- Day 5-6 -->
+<div class="relative">
+<div class="absolute -left-[41px] top-0 w-10 h-10 bg-surface-container-lowest border border-outline/20 rounded-full flex items-center justify-center text-secondary shadow-[0_2px_8px_rgba(45,27,20,0.08)]">
+<span class="material-symbols-outlined text-sm" data-icon="hiking">hiking</span>
+</div>
+<span class="font-label-md text-secondary uppercase tracking-wider">Days 5 - 6</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-xs mb-sm">Savuti Marsh</h3>
+<p class="font-body-md text-on-surface-variant mb-md">Travel north to the starkly beautiful Savuti region. Known for its raw, dramatic landscapes and the mysterious Savuti Channel. Engage in a thrilling guided walking safari to read tracks and understand the micro-ecosystems.</p>
+<div class="flex flex-wrap gap-sm">
+<span class="inline-flex items-center gap-xs bg-surface-container py-xs px-sm rounded font-label-md text-xs text-on-surface-variant"><span class="material-symbols-outlined text-[16px]" data-icon="hiking">hiking</span> Walking Safari</span>
+<span class="inline-flex items-center gap-xs bg-surface-container py-xs px-sm rounded font-label-md text-xs text-on-surface-variant"><span class="material-symbols-outlined text-[16px]" data-icon="directions_car">directions_car</span> Game Drive</span>
+</div>
+</div>
+<!-- Day 7 -->
+<div class="relative">
+<div class="absolute -left-[41px] top-0 w-10 h-10 bg-surface-container-lowest border border-outline/20 rounded-full flex items-center justify-center text-secondary shadow-[0_2px_8px_rgba(45,27,20,0.08)]">
+<span class="material-symbols-outlined text-sm" data-icon="flight_takeoff">flight_takeoff</span>
+</div>
+<span class="font-label-md text-secondary uppercase tracking-wider">Day 7</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-xs mb-sm">Return to Maun</h3>
+<p class="font-body-md text-on-surface-variant">After a final morning game drive and hearty bush breakfast, commence the scenic drive back to Maun for your onward arrangements.</p>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Sticky Sidebar -->
+<div class="lg:col-span-4">
+<div class="sticky top-28 space-y-lg">
+<!-- Inclusion Card -->
+<div class="bg-surface-container-lowest p-lg rounded-xl shadow-[0_4px_24px_rgba(45,27,20,0.06)] border border-outline/10">
+<h3 class="font-headline-md text-headline-md text-primary mb-md border-b border-outline/10 pb-sm">What's Included</h3>
+<ul class="space-y-sm font-body-md text-on-surface-variant mb-lg">
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-secondary text-sm mt-1" data-icon="check_circle">check_circle</span>
+<span>Fully serviced mobile tented camp accommodation</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-secondary text-sm mt-1" data-icon="check_circle">check_circle</span>
+<span>All meals, drinking water, tea/coffee</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-secondary text-sm mt-1" data-icon="check_circle">check_circle</span>
+<span>Professional Safari Guide and Camp Chef</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-secondary text-sm mt-1" data-icon="check_circle">check_circle</span>
+<span>All park fees and camping permits</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-secondary text-sm mt-1" data-icon="check_circle">check_circle</span>
+<span>Custom 4x4 safari vehicle</span>
+</li>
+</ul>
+<h3 class="font-headline-md text-headline-md text-primary mb-md border-b border-outline/10 pb-sm">Not Included</h3>
+<ul class="space-y-sm font-body-md text-on-surface-variant mb-lg">
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-outline text-sm mt-1" data-icon="cancel">cancel</span>
+<span>International &amp; domestic flights</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-outline text-sm mt-1" data-icon="cancel">cancel</span>
+<span>Travel insurance (mandatory)</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-outline text-sm mt-1" data-icon="cancel">cancel</span>
+<span>Alcoholic beverages &amp; soft drinks</span>
+</li>
+</ul>
+</div>
+<!-- Pricing Card -->
+<div class="bg-surface-container p-lg rounded-xl border border-outline/10">
+<h3 class="font-headline-md text-headline-md text-primary mb-md">Pricing &amp; Options</h3>
+<div class="space-y-sm mb-lg">
+<div class="flex justify-between items-center border-b border-outline/10 pb-xs">
+<span class="font-body-md text-on-surface-variant">Per Person Sharing</span>
+<span class="font-headline-md text-primary">$2,650</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline/10 pb-xs">
+<span class="font-body-md text-on-surface-variant">Single Supplement</span>
+<span class="font-headline-md text-primary">+$450</span>
+</div>
+<div class="flex justify-between items-center pt-xs">
+<span class="font-body-md text-on-surface-variant text-sm">Group (4+ pax)</span>
+<span class="font-label-md text-secondary uppercase">10% Off</span>
+</div>
+</div>
+<button class="w-full bg-transparent border-2 border-primary text-primary font-label-md px-lg py-md rounded tracking-[0.02em] hover:bg-primary hover:text-on-primary transition-colors mb-sm">Customise This Itinerary</button>
+<p class="text-center font-label-md text-xs text-outline uppercase tracking-wider">Tailor-made for your group</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-surface-container-lowest full-width border-t border-outline/20 flat no shadows mt-xl">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-md px-margin-mobile md:px-margin-desktop py-xl max-w-7xl mx-auto">
+<div class="md:col-span-1">
+<h4 class="font-display-lg text-headline-md text-primary dark:text-on-surface mb-md">Nomad Delta</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Nomad Delta Mobile Safaris. Where the Wild Has No Walls.</p>
+</div>
+<div class="md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-md font-body-md text-body-md">
+<div class="flex flex-col space-y-sm">
+<a class="text-on-surface-variant hover:text-secondary transition-colors opacity-90 hover:opacity-100" href="index.html">Okavango Delta</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors opacity-90 hover:opacity-100" href="index.html">Chobe National Park</a>
+</div>
+<div class="flex flex-col space-y-sm">
+<a class="text-on-surface-variant hover:text-secondary transition-colors opacity-90 hover:opacity-100" href="index.html">Makgadikgadi Pans</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors opacity-90 hover:opacity-100" href="index.html">Central Kalahari</a>
+</div>
+<div class="flex flex-col space-y-sm">
+<a class="text-on-surface-variant hover:text-secondary transition-colors opacity-90 hover:opacity-100" href="index.html">Terms &amp; Conditions</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors opacity-90 hover:opacity-100" href="index.html">Privacy Policy</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

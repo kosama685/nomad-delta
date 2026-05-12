@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Nomad Delta Mobile Safaris</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Manrope:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#817470",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#584239",
+                        "tertiary-fixed": "#d2e9cd",
+                        "surface-dim": "#dbdad7",
+                        "on-tertiary-fixed-variant": "#384c37",
+                        "tertiary-container": "#112312",
+                        "outline-variant": "#d3c3be",
+                        "primary-container": "#2d1b14",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#4f4441",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#000901",
+                        "secondary-fixed": "#ffdcc6",
+                        "surface-variant": "#e3e2e0",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#b7cdb2",
+                        "on-primary-fixed": "#291710",
+                        "primary": "#110402",
+                        "on-surface": "#1a1c1a",
+                        "surface-container-high": "#e9e8e5",
+                        "secondary-fixed-dim": "#ffb786",
+                        "surface-tint": "#725950",
+                        "inverse-primary": "#e0c0b4",
+                        "on-secondary-fixed-variant": "#723600",
+                        "secondary-container": "#ff8928",
+                        "inverse-on-surface": "#f2f1ee",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#faf9f6",
+                        "on-background": "#1a1c1a",
+                        "surface-container-low": "#f4f3f1",
+                        "on-secondary-fixed": "#311300",
+                        "background": "#faf9f6",
+                        "surface": "#faf9f6",
+                        "on-tertiary-container": "#788c75",
+                        "on-secondary-container": "#642f00",
+                        "secondary": "#964900",
+                        "surface-container": "#efeeeb",
+                        "inverse-surface": "#2f312f",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed-dim": "#e0c0b4",
+                        "on-primary-container": "#9d8177",
+                        "surface-container-highest": "#e3e2e0",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#fddbd0",
+                        "on-tertiary-fixed": "#0e1f0f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "sm": "12px",
+                        "base": "8px",
+                        "lg": "48px",
+                        "xl": "80px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "md": "24px",
+                        "xs": "4px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Libre Caslon Text"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "body-md": ["Manrope"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "label-md": ["Manrope"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "body-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-secondary selection:text-on-secondary">
+<!-- TopNavBar -->
+<nav class="docked full-width top-0 sticky bg-background/95 backdrop-blur-sm z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop h-20 max-w-7xl mx-auto">
+<a class="font-display-lg text-headline-md text-primary dark:text-primary-fixed tracking-tight" href="index.html">
+                Nomad Delta
+            </a>
+<div class="hidden md:flex items-center space-x-gutter">
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200 font-body-md text-label-md tracking-wider" href="index.html">Safaris</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200 font-body-md text-label-md tracking-wider" href="index.html">Destinations</a>
+<a class="text-secondary border-b-2 border-secondary pb-1 font-body-md text-label-md tracking-wider" href="index.html">About Us</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200 font-body-md text-label-md tracking-wider" href="index.html">Contact</a>
+</div>
+<button class="bg-secondary text-on-secondary font-label-md px-md py-sm rounded-DEFAULT hover:opacity-80 transition-opacity Active:scale-95 duration-200 tracking-wider">
+                Book Now
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[716px] flex items-center justify-center px-margin-mobile md:px-margin-desktop py-xl">
+<div class="absolute inset-0 z-0">
+<img alt="Cinematic wide shot of the Okavango Delta at golden hour. A traditional mokoro canoe glides silently through the reeds, silhouette against a brilliant sunset. The lighting is warm and dramatic, establishing a mood of serene adventure and authentic wilderness exploration. The aesthetic is premium travel photography." class="w-full h-full object-cover object-center" data-alt="Cinematic wide shot of the Okavango Delta at golden hour. A traditional mokoro canoe glides silently through the reeds, silhouette against a brilliant sunset. The lighting is warm and dramatic, establishing a mood of serene adventure and authentic wilderness exploration. The aesthetic is premium travel photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmeUdKD5_GW1NB_NmBvRQ_Yk9gGOQ9IkpAe6GvJAZdwxJC_yoJkPYAreBawkI4MtMgxhDIgCrVZaczT43khxOhlng0f2w1IPC646inJy5lEW0Fue-pdcdSFIOyABV3LuT7UsnoxQxBssUUlaaEqGGciWRrTTxdllhl-Sl0nmJ1C5XOq6ybZ725iGDVvs6Exla3a5F4iCu8HFTAut9lLbM102t8OUhgvCLpRGV7fK0RX9miZwMb34d1uVHkAPcXfnUTFmKKkgxC1Xg"/>
+<div class="absolute inset-0 bg-primary/40 mix-blend-multiply"></div>
+</div>
+<div class="relative z-10 text-center max-w-4xl mx-auto bg-background/90 p-lg md:p-xl rounded-DEFAULT shadow-[0_4px_24px_rgba(45,27,20,0.1)] backdrop-blur-md">
+<span class="font-label-md text-secondary tracking-[0.15em] uppercase mb-md block">Nomad Delta Mobile Safaris</span>
+<h1 class="font-display-lg text-display-lg text-primary mb-md">Our Story: The Heart of the Botswana Bush</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    For 18 years, we have been guiding intrepid travelers through the untamed landscapes of Botswana. Our philosophy is simple: authentic storytelling, low-impact exploration, and a deep, enduring respect for the wild.
+                </p>
+</div>
+</section>
+<!-- The Journey Section (Asymmetric Text/Image) -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 md:col-start-2">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-md">18 Years of Expertise in the Delta</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">
+                        What began as a single canvas tent and a boundless passion for the Okavango has grown into a premier mobile safari experience. We don't just show you the wildlife; we immerse you in the rhythm of the bush.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">
+                        Our guides are not just experts; they are storytellers, conservationists, and guardians of this ancient ecosystem. We believe that true luxury lies in unhindered access to pristine nature, guided by those who know its every secret.
+                    </p>
+<a class="inline-flex items-center space-x-sm border-b border-primary text-primary font-label-md hover:text-secondary hover:border-secondary transition-colors pb-xs" href="index.html">
+<span>Read Our Full History</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+</div>
+<div class="md:col-span-5 md:col-start-8 relative">
+<div class="absolute -inset-4 bg-surface-container-high rounded-DEFAULT -z-10 transform translate-x-4 translate-y-4"></div>
+<img alt="Close up portrait of an experienced African safari guide looking thoughtfully into the distance. The guide is wearing neutral khaki colors. The lighting is soft morning sunlight, casting gentle shadows. The mood is professional, knowledgeable, and deeply connected to nature, reflecting the Bush Elegance aesthetic." class="w-full h-auto rounded-DEFAULT shadow-[0_8px_32px_rgba(45,27,20,0.12)] object-cover aspect-[4/5]" data-alt="Close up portrait of an experienced African safari guide looking thoughtfully into the distance. The guide is wearing neutral khaki colors. The lighting is soft morning sunlight, casting gentle shadows. The mood is professional, knowledgeable, and deeply connected to nature, reflecting the Bush Elegance aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQeAa67H71TZHUvb3IzuaAti1mG4beOsBrYZ3ICZpiOvobI6tCQSEtne8goWadn1JexMqtI4JTrdfCcj9LjjtbAKp17dI79zIiQ6RhATR4BISSOP_dgr4dQbby1WT3ZpZJ5AcNIsHikPN094WcCzlk9jJ2FDitaiymwGAXGQq4RG4v1R4aALgySGmp3y3ZnWlWoDo-hf9kxUC33nokYFe_8YoFM_AXr1C3IYx9G6lehlFKvWQ-_Wp-Kbn9bf0WbFHQAR8CydepzVk"/>
+</div>
+</div>
+</section>
+<!-- Divider -->
+<div class="w-full flex justify-center py-lg opacity-40">
+<span class="material-symbols-outlined text-outline text-3xl">change_history</span>
+</div>
+<!-- Meet Your Guides (Bento Grid) -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-xl">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-sm">Meet Your Guides</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">The soul of Nomad Delta. Our guides are distinguished by their profound knowledge, sharp instincts, and genuine warmth.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Guide 1 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT overflow-hidden group hover:-translate-y-1 transition-transform duration-300 shadow-[0_2px_8px_rgba(45,27,20,0.04)]">
+<div class="aspect-square overflow-hidden border-b border-surface-container-highest">
+<img alt="Portrait of a smiling safari guide leaning against a Land Cruiser. The setting is a dusty track with acacia trees in the background. High contrast, warm earthy tones dominating the palette. The expression is welcoming and confident, conveying trust and expertise." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Portrait of a smiling safari guide leaning against a Land Cruiser. The setting is a dusty track with acacia trees in the background. High contrast, warm earthy tones dominating the palette. The expression is welcoming and confident, conveying trust and expertise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFeP08iCsV17rn3hVnajwTGgUajpKlqoMfVibK54qBIprvw_-_7arfK77qX0LbZUaX0wCWdny_Py_e93h4g8znnwDdbFf2ESwadwNAD8MxLgm9W22Wbb2bZrUhZk0O7QWvBsdWBIlhiwUmd1fka8e0GiAltR5NHoIWtCZDuU_ozk9SM40lgJGMTZ3SbXxzO3UakKx-skNmD5wknhMNrlcMkMpNspbYi9jowF4xWaNvad3CgMHTezCeQf2GbtHTdGD9sY1o8TfpAkE"/>
+</div>
+<div class="p-lg">
+<h3 class="font-headline-md text-headline-md text-primary mb-xs">Kabo Modise</h3>
+<p class="font-label-md text-secondary mb-md">Lead Guide &amp; Naturalist</p>
+<p class="font-body-md text-body-md text-on-surface-variant">With over a decade of experience in the Moremi Game Reserve, Kabo's ability to track predators is legendary. His passion for ornithology brings the skies of the Delta to life.</p>
+</div>
+</div>
+<!-- Guide 2 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT overflow-hidden group hover:-translate-y-1 transition-transform duration-300 shadow-[0_2px_8px_rgba(45,27,20,0.04)]">
+<div class="aspect-square overflow-hidden border-b border-surface-container-highest">
+<img alt="A safari guide holding binoculars, looking out over a vast savannah. The sun is high, creating sharp but warm lighting. The image emphasizes observation and patience, core tenets of the Bush Elegance design philosophy. The color palette focuses on faded greens and dry yellows." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A safari guide holding binoculars, looking out over a vast savannah. The sun is high, creating sharp but warm lighting. The image emphasizes observation and patience, core tenets of the Bush Elegance design philosophy. The color palette focuses on faded greens and dry yellows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_NLY4D6NQVZXVw-1b-rb9yhelBEp88LOXyuEK8SmG62mcO8MQFfsRBjk8xJrVeZ6a_iNsJ6KpFz_ga27HDQj1akSU9Ynz_jq7JXi9GTMtVLGDFgn4IS6P7qxkOfDxG5jHJW_A8AkPYAUca5-_KPf_LE63RCX_UfR7xru9mu4gaANnt8Kf-hhLD66MBrjnf4tMk3C16iWCaeBGCMYX7VI7joRAh2TP9M5ESbBV15YHzjiU2sqWO8X5a4Pl8owSOU838rmLEZCbZf8"/>
+</div>
+<div class="p-lg">
+<h3 class="font-headline-md text-headline-md text-primary mb-xs">Naledi Phiri</h3>
+<p class="font-label-md text-secondary mb-md">Senior Tracker</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Naledi possesses an almost instinctual connection to the land. Her quiet patience and sharp eye ensure that no subtle movement in the bush goes unnoticed.</p>
+</div>
+</div>
+<!-- Guide 3 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT overflow-hidden group hover:-translate-y-1 transition-transform duration-300 shadow-[0_2px_8px_rgba(45,27,20,0.04)]">
+<div class="aspect-square overflow-hidden border-b border-surface-container-highest">
+<img alt="A female guide sitting near a campfire at dusk, holding a field notebook. Soft, glowing firelight illuminates her face against the deepening blue twilight. The mood is intimate, storytelling-focused, and deeply authentic to the mobile safari experience." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A female guide sitting near a campfire at dusk, holding a field notebook. Soft, glowing firelight illuminates her face against the deepening blue twilight. The mood is intimate, storytelling-focused, and deeply authentic to the mobile safari experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-0yXyTahovL8tYknLzqLYTCzTo9BrUE8pCscy-ibLiUdsjdLetZxHkbooTX4nlRr8Z5NLUARlxlsjONF1vRA4QVnwYEcKObSkgmogikPe9zX6y5epLT3TZUhcYCtzE-8igFcbqN-LWwOzgo4H_9PRZ86Nk1_icuRzz3rtOPOC_7unBG9v4Fr05Wfq_cB4ohRgsr2LOcYjfucIiQw1pGqFMohTaGMqGJ9pgKtrpDxsCpaezsXsYVrpdalrVY8lWAxCsrJPusT-Ddo"/>
+</div>
+<div class="p-lg">
+<h3 class="font-headline-md text-headline-md text-primary mb-xs">Tebogo 'Tebs' Tau</h3>
+<p class="font-label-md text-secondary mb-md">Expedition Leader</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Tebs orchestrates the perfect mobile camp experience. His storytelling around the evening fire weaves the day's sightings into the rich tapestry of local folklore.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Philosophy & Conservation (Stacked Glassmorphism Cards) -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop relative overflow-hidden">
+<!-- Background Image for the whole section -->
+<div class="absolute inset-0 z-0">
+<img alt="Abstract, softly blurred background of acacia tree leaves filtering warm sunlight. The image serves as a subtle, textural backdrop. The colors are muted earthy greens and warm browns, maintaining the Bush Elegance aesthetic without distracting from the foreground content." class="w-full h-full object-cover opacity-10 grayscale-[30%]" data-alt="Abstract, softly blurred background of acacia tree leaves filtering warm sunlight. The image serves as a subtle, textural backdrop. The colors are muted earthy greens and warm browns, maintaining the Bush Elegance aesthetic without distracting from the foreground content." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWv95KYqg6KWC7EHEnOuRVtIpdiSA9iDRkc0dHXc3TwYWJpv9jWgLK74mTTBO8EweZEr_T7T9qun9oVdY1aUd6Z35wGo4Zw6a-T8XJiHPs0t_a3E__JbmwUERVNqGMKWo_GMJDgrunJBay8WtzOPtjesrjjPCsZ7m6NG8WRi4X28nhM6J3t9TPwoCniHY-sbBMTOD9FwAKjFnslx0yFgoc59tWZv4FDyaTbDtZY6a_g-_ZiJ5xsxGBVQpbd2ygZhDKg7v_gMLEftk"/>
+</div>
+<div class="max-w-4xl mx-auto relative z-10 space-y-lg">
+<!-- Philosophy Card -->
+<div class="bg-surface-container-lowest/80 backdrop-blur-md p-lg md:p-xl rounded-DEFAULT border border-surface-container-highest shadow-[0_8px_32px_rgba(45,27,20,0.05)]">
+<div class="flex items-start gap-md">
+<div class="bg-primary-container/10 p-sm rounded-full text-secondary hidden md:block">
+<span class="material-symbols-outlined text-[32px]">spa</span>
+</div>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-sm">Our Philosophy</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">
+                                We believe in "low-impact, high-connection" travel. Our mobile camps leave no trace, allowing us to venture deep into untouched concessions without permanently altering the landscape. It's a personal, intimate approach to the wild.
+                            </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                By limiting our group sizes and focusing on private, custom itineraries, we ensure that every interaction with the wilderness is respectful and profound.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Conservation Card -->
+<div class="bg-surface-container-lowest/80 backdrop-blur-md p-lg md:p-xl rounded-DEFAULT border border-surface-container-highest shadow-[0_8px_32px_rgba(45,27,20,0.05)] ml-0 md:ml-xl">
+<div class="flex items-start gap-md">
+<div class="bg-primary-container/10 p-sm rounded-full text-secondary hidden md:block">
+<span class="material-symbols-outlined text-[32px]">public</span>
+</div>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-sm">Conservation &amp; Community</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">
+                                True sustainability requires a holistic approach. Nomad Delta is committed to conservation-led guiding, actively participating in anti-poaching initiatives and wildlife monitoring programs.
+                            </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                We partner exclusively with community-owned concessions, ensuring that the revenue generated from your safari directly supports the local villages that co-exist with this incredible wildlife.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-primary text-on-primary text-center">
+<div class="max-w-2xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg mb-md">Ready to Write Your Own Story?</h2>
+<p class="font-body-lg text-body-lg text-on-primary/80 mb-lg">
+                    Join us in the Delta. Let our experts craft an unforgettable journey into the heart of the wild.
+                </p>
+<button class="bg-secondary text-on-secondary font-label-md px-xl py-md rounded-DEFAULT hover:opacity-90 transition-opacity Active:translate-y-1 duration-200 tracking-wider shadow-[0_4px_16px_rgba(150,73,0,0.3)]">
+                    View Our Safaris
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-surface-container-lowest border-t border-outline/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-md px-margin-mobile md:px-margin-desktop py-xl max-w-7xl mx-auto">
+<div class="md:col-span-1">
+<span class="font-display-lg text-headline-md text-primary dark:text-on-surface block mb-sm">Nomad Delta</span>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-90">Where the Wild Has No Walls.</p>
+</div>
+<div class="flex flex-col space-y-sm">
+<span class="font-label-md text-primary dark:text-on-surface mb-xs">Destinations</span>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="index.html">Okavango Delta</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="index.html">Chobe National Park</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="index.html">Makgadikgadi Pans</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="index.html">Central Kalahari</a>
+</div>
+<div class="flex flex-col space-y-sm">
+<span class="font-label-md text-primary dark:text-on-surface mb-xs">Legal</span>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="index.html">Terms &amp; Conditions</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="index.html">Privacy Policy</a>
+</div>
+<div class="flex flex-col justify-end">
+<p class="font-body-md text-body-md text-on-surface-variant opacity-90 text-sm mt-lg md:mt-0">
+                    © 2024 Nomad Delta Mobile Safaris.
+                 </p>
+</div>
+</div>
+</footer>
+</body></html>

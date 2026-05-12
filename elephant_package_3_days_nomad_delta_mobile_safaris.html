@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Elephant Package - Nomad Delta</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline": "#817470",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#584239",
+                    "tertiary-fixed": "#d2e9cd",
+                    "surface-dim": "#dbdad7",
+                    "on-tertiary-fixed-variant": "#384c37",
+                    "tertiary-container": "#112312",
+                    "outline-variant": "#d3c3be",
+                    "primary-container": "#2d1b14",
+                    "on-primary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-surface-variant": "#4f4441",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#000901",
+                    "secondary-fixed": "#ffdcc6",
+                    "surface-variant": "#e3e2e0",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed-dim": "#b7cdb2",
+                    "on-primary-fixed": "#291710",
+                    "primary": "#110402",
+                    "on-surface": "#1a1c1a",
+                    "surface-container-high": "#e9e8e5",
+                    "secondary-fixed-dim": "#ffb786",
+                    "surface-tint": "#725950",
+                    "inverse-primary": "#e0c0b4",
+                    "on-secondary-fixed-variant": "#723600",
+                    "secondary-container": "#ff8928",
+                    "inverse-on-surface": "#f2f1ee",
+                    "error-container": "#ffdad6",
+                    "surface-bright": "#faf9f6",
+                    "on-background": "#1a1c1a",
+                    "surface-container-low": "#f4f3f1",
+                    "on-secondary-fixed": "#311300",
+                    "background": "#faf9f6",
+                    "surface": "#faf9f6",
+                    "on-tertiary-container": "#788c75",
+                    "on-secondary-container": "#642f00",
+                    "secondary": "#964900",
+                    "surface-container": "#efeeeb",
+                    "inverse-surface": "#2f312f",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed-dim": "#e0c0b4",
+                    "on-primary-container": "#9d8177",
+                    "surface-container-highest": "#e3e2e0",
+                    "on-error": "#ffffff",
+                    "primary-fixed": "#fddbd0",
+                    "on-tertiary-fixed": "#0e1f0f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "sm": "12px",
+                    "base": "8px",
+                    "lg": "48px",
+                    "xl": "80px",
+                    "margin-mobile": "20px",
+                    "margin-desktop": "64px",
+                    "md": "24px",
+                    "xs": "4px"
+            },
+            "fontFamily": {
+                    "display-lg": [
+                            "Libre Caslon Text"
+                    ],
+                    "headline-lg": [
+                            "Libre Caslon Text"
+                    ],
+                    "body-md": [
+                            "Manrope"
+                    ],
+                    "headline-md": [
+                            "Libre Caslon Text"
+                    ],
+                    "label-md": [
+                            "Manrope"
+                    ],
+                    "headline-lg-mobile": [
+                            "Libre Caslon Text"
+                    ],
+                    "body-lg": [
+                            "Manrope"
+                    ]
+            },
+            "fontSize": {
+                    "display-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "28px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-secondary/20 selection:text-secondary">
+<!-- TopNavBar -->
+<nav class="docked full-width top-0 sticky bg-background/95 backdrop-blur-sm z-50 transition-all duration-300">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop h-20 max-w-7xl mx-auto">
+<div class="flex items-center gap-sm">
+<a class="font-display-lg text-headline-md text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity" href="index.html">
+                    Nomad Delta
+                </a>
+</div>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center gap-lg">
+<a class="font-body-md text-label-md uppercase tracking-wider text-secondary border-b-2 border-secondary pb-1" href="index.html">Safaris</a>
+<a class="font-body-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-secondary transition-colors duration-200" href="index.html">Destinations</a>
+<a class="font-body-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-secondary transition-colors duration-200" href="index.html">About Us</a>
+<a class="font-body-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-secondary transition-colors duration-200" href="index.html">Contact</a>
+</div>
+<!-- Desktop Action -->
+<div class="hidden md:flex items-center">
+<a class="bg-secondary text-on-secondary px-6 py-3 rounded-DEFAULT font-label-md hover:opacity-90 transition-all shadow-[0_2px_8px_rgba(45,27,20,0.12)] hover:-translate-y-0.5" href="index.html">
+                    Book Now
+                </a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button aria-label="Open Menu" class="md:hidden text-on-surface p-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</nav>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="relative w-full h-[614px] md:h-[716px] flex items-end pb-xl px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+<div class="absolute inset-0 z-0">
+<img alt="A majestic elephant herd wading through the shallow waters of the Chobe River at sunset. The sky is a brilliant gradient of orange, pink, and deep purple, reflecting off the water. The landscape is lush and wild, capturing the raw elegance of Botswana's Okavango Delta. The mood is serene, powerful, and deeply immersed in untamed nature." class="w-full h-full object-cover" data-alt="A majestic elephant herd wading through the shallow waters of the Chobe River at sunset. The sky is a brilliant gradient of orange, pink, and deep purple, reflecting off the water. The landscape is lush and wild, capturing the raw elegance of Botswana's Okavango Delta. The mood is serene, powerful, and deeply immersed in untamed nature." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZLYoLr3zp9U5i9B0S2qFWqu7c2b_JTw99_JBZ3GtF3vEp2BThrc_Rw_VhrUDixfx1jiaFMrql4fDt_O1Hek0aXcz3nR7usrDJcGoYODVScXlwgJbk13WuD8-iTMxVOOXj6fNBrTbIrK-oNzKo01zwCoQ3vOEgUGGYU7GGnyv-HsFWUkCC4qLb8I0Fy9pjl1gUBjX78pyePlYcphFjoHnv3aIYToP5Brwg7prjoX7uLCFa0P32I3hLWTH46NR0stpo9OMW1TjJhIQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-md">
+<div class="max-w-3xl text-on-primary">
+<span class="inline-block bg-secondary/90 backdrop-blur-sm text-on-secondary px-4 py-1.5 rounded-full font-label-md mb-md uppercase tracking-wider text-xs">
+                        3 Days Wildlife Safari
+                    </span>
+<h1 class="font-display-lg text-display-lg text-on-primary mb-sm">Elephant Package</h1>
+<p class="font-body-lg text-body-lg text-on-primary/90 max-w-2xl">
+                        Immerse yourself in the heart of Chobe National Park. Experience unparalleled wildlife viewing where land and water meet.
+                    </p>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-lg shadow-[0_8px_30px_rgba(45,27,20,0.12)] border border-outline/10 text-on-surface md:min-w-[300px]">
+<p class="font-label-md text-on-surface-variant uppercase tracking-wider mb-1">Starting from</p>
+<p class="font-display-lg text-headline-lg text-primary mb-md">$1,050 <span class="font-body-md text-body-md text-on-surface-variant">/ person</span></p>
+<button class="w-full bg-secondary text-on-secondary py-3 rounded-DEFAULT font-label-md hover:opacity-90 transition-all shadow-[0_2px_8px_rgba(45,27,20,0.12)] hover:-translate-y-0.5 flex justify-center items-center gap-2">
+                        Enquire Now
+                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Main Content -->
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-xl grid grid-cols-1 lg:grid-cols-12 gap-xl">
+<!-- Left Column: Details -->
+<div class="lg:col-span-8 flex flex-col gap-xl">
+<!-- At a Glance -->
+<section>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-lg flex items-center gap-sm">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">travel_explore</span>
+                        At a Glance
+                    </h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-md">
+<div class="bg-surface-container-low p-md rounded-lg flex flex-col items-start gap-2 border border-outline/5">
+<span class="material-symbols-outlined text-outline">schedule</span>
+<p class="font-label-md text-on-surface-variant">Duration</p>
+<p class="font-body-lg text-primary font-medium">3 Days / 2 Nights</p>
+</div>
+<div class="bg-surface-container-low p-md rounded-lg flex flex-col items-start gap-2 border border-outline/5">
+<span class="material-symbols-outlined text-outline">location_on</span>
+<p class="font-label-md text-on-surface-variant">Start / End</p>
+<p class="font-body-lg text-primary font-medium">Kasane</p>
+</div>
+<div class="bg-surface-container-low p-md rounded-lg flex flex-col items-start gap-2 border border-outline/5">
+<span class="material-symbols-outlined text-outline">group</span>
+<p class="font-label-md text-on-surface-variant">Group Size</p>
+<p class="font-body-lg text-primary font-medium">Max 6 Pax</p>
+</div>
+<div class="bg-surface-container-low p-md rounded-lg flex flex-col items-start gap-2 border border-outline/5">
+<span class="material-symbols-outlined text-outline">landscape</span>
+<p class="font-label-md text-on-surface-variant">Destination</p>
+<p class="font-body-lg text-primary font-medium">Chobe</p>
+</div>
+</div>
+</section>
+<hr class="border-t border-outline/20 w-full max-w-xs mx-auto"/>
+<!-- Itinerary -->
+<section>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-lg flex items-center gap-sm">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">map</span>
+                        Itinerary
+                    </h2>
+<div class="flex flex-col gap-lg relative">
+<!-- Connecting Line -->
+<div class="absolute left-[19px] top-[40px] bottom-[40px] w-px bg-outline/20 hidden md:block"></div>
+<!-- Day 1 -->
+<div class="flex flex-col md:flex-row gap-md relative">
+<div class="md:w-16 flex-shrink-0 flex md:justify-center z-10">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest border-2 border-surface flex items-center justify-center text-primary font-label-md shadow-sm">
+                                    01
+                                </div>
+</div>
+<div class="bg-surface-container-lowest p-lg rounded-lg border border-outline/10 shadow-[0_4px_20px_rgba(45,27,20,0.05)] flex-1">
+<div class="flex items-center gap-3 mb-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">sailing</span>
+<h3 class="font-headline-md text-headline-md text-primary">Arrival &amp; Sunset Cruise</h3>
+</div>
+<p class="font-body-md text-on-surface-variant mb-md">
+                                    Arrive in Kasane and transfer to your riverside lodge. In the afternoon, embark on a signature Chobe River boat cruise. This is prime time for viewing elephants crossing the river and hippos relaxing in the shallows as the sun sets.
+                                </p>
+<div class="w-full h-48 rounded-md overflow-hidden border border-outline/10 relative">
+<img alt="A small safari boat cruising along a wide, calm African river at golden hour. Silhouettes of birds and distant wildlife are visible on the riverbanks. The lighting is warm and dramatic, highlighting the ripples in the water. The aesthetic is peaceful, adventurous, and true to the luxury bush experience." class="w-full h-full object-cover" data-alt="A small safari boat cruising along a wide, calm African river at golden hour. Silhouettes of birds and distant wildlife are visible on the riverbanks. The lighting is warm and dramatic, highlighting the ripples in the water. The aesthetic is peaceful, adventurous, and true to the luxury bush experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcnrXjk7tu__S8vwOGczT0HI5btg7gPMkOjxHAHfzhPAV9yhVOdcXNRvHbccLFLoQXenhtcdiRJ9mzoq_-97BMQuoL1hxxYyOdBWIdQzelnsh-7dMJd8wDqbq9Ai-NZ3fVzu-A4EIHrrmQGBjl-fDeAYYfJzIEXMK4pVoOHlD0osmVkBrCpf35aP7iEyNRm9agnek_342Ej8nx0YEwfj8hMs-mL6EPvz0jvs9VM2GCfVgYD7faMxqzbBl2qMPYgXh4FAB8u8CvSvE"/>
+</div>
+</div>
+</div>
+<!-- Day 2 -->
+<div class="flex flex-col md:flex-row gap-md relative">
+<div class="md:w-16 flex-shrink-0 flex md:justify-center z-10">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary border-2 border-surface flex items-center justify-center font-label-md shadow-sm">
+                                    02
+                                </div>
+</div>
+<div class="bg-surface-container-lowest p-lg rounded-lg border border-outline/10 shadow-[0_4px_20px_rgba(45,27,20,0.05)] flex-1">
+<div class="flex items-center gap-3 mb-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">directions_car</span>
+<h3 class="font-headline-md text-headline-md text-primary">Full Day Game Drives</h3>
+</div>
+<p class="font-body-md text-on-surface-variant mb-md">
+                                    A full day dedicated to exploring the Chobe riverfront in a customized 4x4 safari vehicle. Known for its massive elephant populations, the park also offers excellent chances to spot lions, leopards, and large herds of buffalo. Enjoy a picnic lunch in the wild.
+                                </p>
+<div class="w-full h-48 rounded-md overflow-hidden border border-outline/10 relative">
+<img alt="A close-up view of a magnificent lion resting under the shade of an acacia tree in the dry African savanna. The golden grass surrounds the majestic animal. The lighting is bright, harsh daylight typical of a midday safari. The image evokes a sense of raw power and untamed wilderness, aligning with the premium expedition style." class="w-full h-full object-cover" data-alt="A close-up view of a magnificent lion resting under the shade of an acacia tree in the dry African savanna. The golden grass surrounds the majestic animal. The lighting is bright, harsh daylight typical of a midday safari. The image evokes a sense of raw power and untamed wilderness, aligning with the premium expedition style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4ratWsYtfAkDabq27x3HDFTV-Xqqou6Zk2a1ts7TraxfMOeqNgEAUcFjiI9KAVQpAlO211KbjDx_TaJi7dB1Tnx_4uBzWuGVJJuW7f76FdEfUven-eexl0kF7C5Z1ztft0zPM8X-ej_NpUCsxnmOOrpGuYIUm1sG1N8dBCvJBo-gE6HhY36S_QRRgLD5K4huY1958ne4FvgrTOHDjZxeXx1PyvBORA3KB-3RyE0pdOgse47ARZLMVhuHMGkBKgvSNfCPhhdFKrbc"/>
+</div>
+</div>
+</div>
+<!-- Day 3 -->
+<div class="flex flex-col md:flex-row gap-md relative">
+<div class="md:w-16 flex-shrink-0 flex md:justify-center z-10">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest border-2 border-surface flex items-center justify-center text-primary font-label-md shadow-sm">
+                                    03
+                                </div>
+</div>
+<div class="bg-surface-container-lowest p-lg rounded-lg border border-outline/10 shadow-[0_4px_20px_rgba(45,27,20,0.05)] flex-1">
+<div class="flex items-center gap-3 mb-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">wb_twilight</span>
+<h3 class="font-headline-md text-headline-md text-primary">Sunrise Safari &amp; Departure</h3>
+</div>
+<p class="font-body-md text-on-surface-variant">
+                                    An early wake-up call for a final morning game drive as the bush awakens. Watch predators finishing their nightly hunts before returning to the lodge for a hearty breakfast. Transfer to Kasane airport for your onward journey.
+                                </p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Sidebar -->
+<div class="lg:col-span-4">
+<div class="sticky top-[100px] flex flex-col gap-md">
+<!-- Pricing Card -->
+<div class="bg-surface-container-lowest p-lg rounded-lg border border-outline/10 shadow-[0_4px_20px_rgba(45,27,20,0.05)]">
+<h3 class="font-headline-md text-headline-md text-primary mb-md border-b border-outline/10 pb-sm">Trip Details</h3>
+<div class="flex justify-between items-center mb-sm">
+<span class="font-body-md text-on-surface-variant">Base Price</span>
+<span class="font-headline-md text-primary font-bold">$1,050</span>
+</div>
+<p class="font-label-md text-outline text-xs mb-md">*Per person sharing. Excludes international flights.</p>
+<div class="space-y-3 mb-lg">
+<h4 class="font-label-md text-primary uppercase tracking-wider">Inclusions</h4>
+<ul class="font-body-md text-on-surface-variant space-y-2">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">check_circle</span>
+                                    2 Nights Lodge Accommodation
+                                </li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">check_circle</span>
+                                    All Meals (B, L, D)
+                                </li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">check_circle</span>
+                                    Guided Game Drives &amp; Boat Cruise
+                                </li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">check_circle</span>
+                                    Park Fees &amp; Taxes
+                                </li>
+</ul>
+</div>
+<button class="w-full bg-secondary text-on-secondary py-4 rounded-DEFAULT font-label-md hover:opacity-90 transition-all shadow-[0_2px_8px_rgba(45,27,20,0.12)] hover:-translate-y-0.5 mb-3">
+                            Enquire Availability
+                        </button>
+<button class="w-full border border-primary text-primary py-3 rounded-DEFAULT font-label-md hover:bg-surface-container-high transition-colors">
+                            Download PDF Itinerary
+                        </button>
+</div>
+<!-- Map Card -->
+<div class="bg-surface-container-lowest p-md rounded-lg border border-outline/10 shadow-[0_4px_20px_rgba(45,27,20,0.05)] overflow-hidden">
+<div class="w-full h-48 bg-surface-variant flex items-center justify-center rounded-md relative overflow-hidden">
+<!-- Using unsplash map placeholder -->
+<img alt="A vintage-style topographical map showing the Okavango Delta and Chobe National Park regions in Botswana. The map features earthy tones, contour lines, and subtle geographic markings. The aesthetic is that of a classic explorer's field journal, evoking a sense of premium adventure and geographic expertise." class="w-full h-full object-cover opacity-80 mix-blend-multiply" data-alt="A vintage-style topographical map showing the Okavango Delta and Chobe National Park regions in Botswana. The map features earthy tones, contour lines, and subtle geographic markings. The aesthetic is that of a classic explorer's field journal, evoking a sense of premium adventure and geographic expertise." data-location="Chobe National Park, Botswana" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl0xlKmJUX-P56eLHAznwwXBut4J4Hgw-FHt5sN0HxHfFld5o2oGupPBEJCtHYDnqjFHhLRSVwS8TebXuOVYp9ud-7teHPDC6w60PSdqbh_QFwdXf_n7nubO0M7HvuHMj46jk9EnfeQLZaZWsYevbKraKz2YnSM0hFpggaTSmG4-097cS68a1Ap2RhmM_i9b2PMxFh4MxKW3OnpA0aIdwSUnvcN4IHuTJa1QJyDqwYy6ojJI8BdGkEGrI0utJ17FbVkQ3uAnrHvBI"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-surface/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center gap-2 shadow-sm border border-outline/10">
+<span class="material-symbols-outlined text-secondary text-[18px]">pin_drop</span>
+<span class="font-label-md text-primary">Chobe Region</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="full-width border-t border-outline/20 flat no shadows bg-surface-container-highest dark:bg-surface-container-lowest">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-md px-margin-mobile md:px-margin-desktop py-xl max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-2 flex flex-col gap-sm">
+<span class="font-display-lg text-headline-md text-primary dark:text-on-surface opacity-90 hover:opacity-100 transition-opacity">
+                    Nomad Delta
+                </span>
+<p class="font-body-md text-body-md text-primary dark:text-on-surface mt-2 max-w-md">
+                    © 2024 Nomad Delta Mobile Safaris. Where the Wild Has No Walls.
+                </p>
+</div>
+<div class="flex flex-col gap-3">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors opacity-90 hover:opacity-100" href="index.html">Okavango Delta</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors opacity-90 hover:opacity-100" href="index.html">Chobe National Park</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors opacity-90 hover:opacity-100" href="index.html">Makgadikgadi Pans</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors opacity-90 hover:opacity-100" href="index.html">Central Kalahari</a>
+</div>
+<div class="flex flex-col gap-3">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors opacity-90 hover:opacity-100" href="index.html">Terms &amp; Conditions</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors opacity-90 hover:opacity-100" href="index.html">Privacy Policy</a>
+</div>
+</div>
+</footer>
+</body></html>
